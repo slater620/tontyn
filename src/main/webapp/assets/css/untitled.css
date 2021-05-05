@@ -1,0 +1,38 @@
+.col {
+}
+
+.card {
+  position: absolute;
+  top: 25px;
+  width: 75%;
+}
+
+.btn.btn-primary.btn-block.text-white.btn-user {
+  color: #212529 !important;
+}
+
+.h1, h1 {
+  text-align: center;
+}
+
+.card {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.btn.btn-primary.btn-block.text-white.btn-user {
+  border-radius: 10em;
+}
+
+input {
+  border-radius: 10em;
+}
+
+.form-control-user {
+  border-radius: 10em;
+}
+
+.h1, h1 {
+}
+
