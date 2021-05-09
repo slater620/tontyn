@@ -12,19 +12,23 @@
         <title>Formulaire reinitialisation mot de passe</title>
     </head>
     <body>
+        <div align='center'>
+            <img src="<c:url value="/ressources/images/logo.png"/>" alt='logo'>
+            <h1><b>Formulaire réinitialisation de mot de passse</b></h1>
+        </div>
         <div align="center">
-            Id: <c:out value="${id}"/>
             
-            <form action="<c:url value="/reinitialisatonMotDePasse/traitement"></c:url>" method='post'>
+            <span style="color:red"><b><c:out value="${message}"/></b></span><br><br>
+            
+            <form action="<c:url value="/reinitialiserMotDePasse/traitement/${id}"></c:url>" method='post'>
                 Nouveau mot de passe: <input type='password' id="email" name="motDePasse1" required="true"/><br><br>
                 Entrez de nouveau le mot de passe: <input type='password' id='motDePasse' name="motDePasse2" required="true"/><br>
                 <br>
-                
+                <br>
                 <input type="submit" value="Enregistrer"/>
             </form>
-            <br>
-            <br>
-            <a href="/tontyn/mot_de_passe_oublie/">Mot de passe oublié</a><br><br>
+            <a href="/tontyn/connexion"><br><br><b>Se connecter</b></a>
+            <br><br><br>
             <a href="/tontyn/creerCompte">Créer un compte</a>
             <br>
             <br>

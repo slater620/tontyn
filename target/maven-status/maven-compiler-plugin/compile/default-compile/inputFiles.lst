@@ -2,6 +2,8 @@
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/repository/AppUserRepository.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/repository/AppRoleRepository.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/BasicApplication.java
+/media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/model/LienRecuperation.java
+/media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/service/LienRecuperationRepositoryService.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/controller/TontynAppControlleur.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/model/AppUser.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/repository/UserRoleRepository.java
@@ -12,6 +14,7 @@
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/controller/LoginControlleur.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/repository/UtilisateurRepository.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/service/UserDetailsServiceImpl.java
+/media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/repository/LienRecuperationRepository.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/configuration/MyConstants.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/model/UserRole.java
 /media/tanankem/ramses/programmation/programmation_web/spring/programmes/projet_tontine/src/main/java/com/tontyn/configuration/WebSecurityConfig.java

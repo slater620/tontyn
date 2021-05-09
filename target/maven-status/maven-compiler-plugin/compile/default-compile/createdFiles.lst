@@ -9,11 +9,14 @@ com/tontyn/service/AppUserRepositoryService.class
 com/tontyn/service/UtilisateurRepositoryService.class
 com/tontyn/controller/TontynAppControlleur.class
 com/tontyn/repository/UserRoleRepository.class
+com/tontyn/service/LienRecuperationRepositoryService.class
 com/tontyn/model/AppUser.class
 com/tontyn/configuration/MyConstants.class
+com/tontyn/model/LienRecuperation.class
 com/tontyn/BasicApplication.class
 com/tontyn/repository/AppUserRepository.class
 com/tontyn/service/UserDetailsServiceImpl.class
+com/tontyn/repository/LienRecuperationRepository.class
 com/tontyn/model/UserRole.class
 com/tontyn/model/Utilisateur.class
 com/tontyn/repository/AppRoleRepository.class

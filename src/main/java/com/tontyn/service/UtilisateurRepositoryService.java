@@ -23,6 +23,9 @@ public class UtilisateurRepositoryService{
     @Autowired
     private UtilisateurRepository utilisateurRepository;
     
+    //fonction permettant de sauvegarder un utilisateur
+    /*cette fonction est utilisée pour sauvegarder un nouvel utilisateur afin d'éviter d'écraser
+    un utilisateur déjà existant au profit du nouvel utilisateur*/
     public void save(Utilisateur utilisateur) throws Exception{
         
         Optional<Utilisateur> tmp = utilisateurRepository.findByEmail(utilisateur.getEmail());
@@ -32,6 +35,12 @@ public class UtilisateurRepositoryService{
         }else{
             utilisateurRepository.save(utilisateur);
         }
+    }
+    
+    /*fonction permettant de sauvegarder les modifications effectuées sur un utilisateur lors des mises 
+    à jour*/
+    public void update(Utilisateur utilisateur){
+        utilisateurRepository.save(utilisateur);
     }
    
     public Utilisateur checkConnexion(String email, String motDePasse) throws Exception{

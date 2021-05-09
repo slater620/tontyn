@@ -5,8 +5,13 @@
  */
 package com.tontyn.controller;
 
+import com.tontyn.model.Utilisateur;
+import com.tontyn.service.UtilisateurRepositoryService;
+import java.security.Principal;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -17,12 +22,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class TontynAppControlleur {
     
+    @Autowired
+    UtilisateurRepositoryService utilisateurRepositoryService;
+    
     @RequestMapping("/tontynapp")
-    public ModelAndView tontynApp(){
+    public ModelAndView tontynApp(Principal principal){
+        User user = (User)((Authentication)principal).getPrincipal();
+        String email = user.getUsername();
+        
+        Utilisateur utilisateur = utilisateurRepositoryService.getUtilisateurRepository().findOneByEmail(email);
         
         ModelAndView mv = new ModelAndView("tontynapp");
         
-        
+        mv.addObject("utilisateur", utilisateur);
        
         return mv;
     }
